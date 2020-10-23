@@ -1,0 +1,18 @@
+{
+  "name": "saaze/site",
+  "autoload": {
+    "psr-4": {
+      "SaazeSite\\": "src/"
+    }
+  },
+  "require": {
+    "saaze/core": "dev-develop"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

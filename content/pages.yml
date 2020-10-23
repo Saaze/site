@@ -1,0 +1,3 @@
+title: Pages
+index_route: /
+entry_route: "/{slug}"
