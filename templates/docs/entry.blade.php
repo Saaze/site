@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', $entry['title'])
+@section('title', $entry->title)
 
 @section('content')
 @include('partials.nav', ['nav_class' => 'bg-white border-bottom'])
@@ -107,12 +107,12 @@
 
                     <!-- Heading -->
                     <h1 class="font-family-sans-serif mb-0">
-                        {{ $entry['title'] }}
+                        {{ $entry->title }}
                     </h1>
 
                 </div>
 
-                {!! $entry['content'] !!}
+                {!! $entry->content !!}
 
             </div>
             <div class="col-lg-3 col-xl-2 d-none d-xl-block">
