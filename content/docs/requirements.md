@@ -1,6 +1,5 @@
+---
 title: Requirements
-order: 2
-
 ---
 
 Before you [get started](/docs/quick-start) with Saaze, make sure your are running **PHP v7.3 or higher**. To check the version of PHP you are running, use the following command in your terminal:

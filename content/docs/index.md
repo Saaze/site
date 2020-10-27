@@ -1,6 +1,5 @@
+---
 title: Introduction
-order: 1
-
 ---
 
 Saaze is an all-inclusive, flat-file CMS for _simple_ websites and blogs. It's not designed to be a replacement for great CMS's (e.g. WordPress, Statamic etc.), rather it's designed to be a smaller, simpler alternative.

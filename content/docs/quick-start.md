@@ -1,6 +1,5 @@
+---
 title: Quick Start
-order: 3
-
 ---
 
 Before you get started with Saaze, make sure your are running [PHP 7.3+ and Composer](/docs/requirements).

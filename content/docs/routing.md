@@ -1,5 +1,5 @@
+---
 title: Routing
-
 ---
 
 In a Saaze site, all of the routes are defined by [collections](/docs/collections). The `index_route` and `entry_route` of each collection will be used to determine how an entry can be accessed by URL. For example, let's say we have `posts` collection:

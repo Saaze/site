@@ -1,5 +1,5 @@
+---
 title: Entries
-
 ---
 
 Entries are defined by Markdown files and are stored in a subdirectory of the content directory of your site. The subdirectory will have the same name as the collection ID. For example, the entries for a `posts` collection will be stored in the `content/posts` directory. The ID of an entry is defined by the file name of the entry. For example, the entry file `an-example-post.md` has an ID of `an-example-post`.

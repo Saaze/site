@@ -1,5 +1,5 @@
+---
 title: Templates
-
 ---
 
 Saaze uses the [Blade template engine](https://laravel.com/docs/8.x/blade) for it's templates, made popular by the Laravel framework. Blade is great because it's simple, powerful, and does not restrict you from using plain PHP code in your templates. In fact, all Blade templates are compiled into plain PHP code and cached until they are modified, meaning Blade adds essentially zero overhead to your site.

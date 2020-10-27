@@ -1,5 +1,5 @@
+---
 title: CLI
-
 ---
 
 Saaze comes bundled with an easy to use CLI to make developing and building a Saaze site much easier. To see all of the available commands run the following in a terminal from the root of your Saaze site:

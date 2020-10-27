@@ -1,5 +1,5 @@
+---
 title: Collections
-
 ---
 
 One of the core concepts of Saaze is that everything is a collection of entries. From pages, blog posts, navigation menus, users, everything.

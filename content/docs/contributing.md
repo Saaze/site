@@ -1,5 +1,5 @@
+---
 title: Contributing
-
 ---
 
 Saaze is open source software, released under the MIT license, and [hosted on GitHub](https://github.com/Saaze). The CMS is split into two repositories:

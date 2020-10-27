@@ -1,5 +1,5 @@
+---
 title: Deploying
-
 ---
 
 When it comes to deploying Saaze sites you have two options:

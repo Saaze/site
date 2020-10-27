@@ -1,5 +1,5 @@
+---
 title: Structure
-
 ---
 
 The file structure of a Saaze site is as follows:
