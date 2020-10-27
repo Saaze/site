@@ -44,12 +44,12 @@ The first argument is the collection ID (`pages`) and the second argument is the
 
 ## Add some content {#add-content}
 
-Go ahead and use your favourite text editor to edit the new entry file `pages/indedx.md`. The file is split into two parts separated by a triple dash `---`:
+Go ahead and use your favourite text editor to edit the new entry file `pages/indedx.md`. The file is split into two parts:
 
-1. The first part is made up of Yaml metadata
+1. The first part is made up of Yaml frontmatter
 1. The second part is the Markdown content
 
-You should already see the title we passed to the `make:entry` command in the metadata section. Feel free to add some markdown content below the `---` separator.
+You should already see the title we passed to the `make:entry` command in the frontmatter section. Feel free to add some markdown content below the `---` separator.
 
 If you run the `serve` command again now you should see the page content displayed on your site.
 

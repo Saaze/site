@@ -16,7 +16,7 @@ Static sites are great for being fast and easy to deploy. However, sometimes you
 
 ## Easy to edit {#easy-to-edit}
 
-Markdown has become the defacto way to edit content for the internet. It's simple to understand and write. So Saaze uses Markdown with a sprinkle of Yaml metadata to manage your content.
+Markdown has become the defacto way to edit content for the internet. It's simple to understand and write. So Saaze uses Markdown with a sprinkle of Yaml frontmatter to manage your content.
 
 ## Easy to theme {#easy-to-theme}
 
@@ -34,8 +34,6 @@ Sazze deliberately has a stupidly simple architecture: Everything is a collectio
 
 Developing your site should be painless. That's why Saaze comes with CLI tools for serving and building your site out of the box. No external tools required.
 
----
-
-## Ready to get started? {#get-started}
-
-To get started follow our [quick start guide](/docs/quick-start).
+<div class="text-center mt-5 mt-lg-8">
+<a href="/docs/quick-start" class="btn btn-primary lift">Quick Start Guide</a>
+</div>

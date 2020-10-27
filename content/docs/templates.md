@@ -2,9 +2,36 @@
 title: Templates
 ---
 
-Saaze uses the [Blade template engine](https://laravel.com/docs/8.x/blade) for it's templates, made popular by the Laravel framework. Blade is great because it's simple, powerful, and does not restrict you from using plain PHP code in your templates. In fact, all Blade templates are compiled into plain PHP code and cached until they are modified, meaning Blade adds essentially zero overhead to your site.
+Saaze uses the [<i class="fe fe-external-link pr-1"></i>Blade template engine](https://laravel.com/docs/8.x/blade), made popular by the Laravel framework, for it's templates. Blade is great because it's simple, powerful, and does not restrict you from using plain PHP code in your templates. In fact, all Blade templates are compiled into plain PHP code and cached until they are modified, meaning Blade adds essentially zero overhead to your site.
 
-To find out more about how to use Blade templates, see the [Blade documentation](https://laravel.com/docs/8.x/blade) on the Laravel website.
+For example, the Blade template for a collection might look like this:
+
+
+```html
+@extends('layout')
+
+@section('content')
+
+    @foreach ($pagination->entries as $entry)
+        <div class="post">
+            <h2><a href="{{ $entry->url }}">{{ $entry->title }}</a></h2>
+            <p>{!! $entry->excerpt !!}</p>
+        </div>
+    @endforeach
+
+    <div class="pagination">
+        @if ($pagination->prevUrl)
+            <a href="{{ $pagination->prevUrl }}">&larr; Previous</a>
+        @endif
+        @if ($pagination->nextUrl)
+            <a href="{{ $pagination->nextUrl }}">Next &rarr;</a>
+        @endif
+    </div>
+
+@endsection
+```
+
+To find out more about how to use Blade templates, see the [<i class="fe fe-external-link pr-1"></i>Blade documentation](https://laravel.com/docs/8.x/blade) on the Laravel website.
 
 ## Template hierarchy {#template-hierarchy}
 
@@ -19,9 +46,10 @@ You can override templates for specific collections by creating `index` and `ent
 * `templates/posts/index.blade.php`
 * `templates/posts/entry.blade.php`
 
-Individual entries can also override which template is used to display them by defining a `template` in their [Yaml metadata](/docs/entries). For example, this entry would use the template `custom.blade.php` if it existed:
+Individual entries can also override which template is used to display them by specifying a `template` in their [Yaml frontmatter](/docs/entries). For example, this entry would use the template `custom.blade.php` if it existed:
 
 ```yaml
+---
 title: Custom Entry
 template: custom
 ---
@@ -32,10 +60,10 @@ template: custom
 
 A [collection](/docs/collections) template will have the following variables automatically injected:
 
-* `$collection` - An array containing the collection data
-* `$entries` - An array containing entries and pagination data
+* `$collection` - An object containing the collection data
+* `$pagination` - An object containing entries and pagination data
 
-The `$entries` array will contain the following fields:
+The `$pagination` object has the following properties:
 
 * `currentPage` - The index of the current page
 * `prevPage` - The index of the previous page
@@ -51,10 +79,10 @@ The `$entries` array will contain the following fields:
 
 An [entry](/docs/entries) template will have the following variables automatically injected:
 
-* `$collection` - An array containing the collection data for the collection the entry belongs to
-* `$entry` - An array containing the entry data
+* `$collection` - An object containing the collection data for the collection the entry belongs to
+* `$entry` - An object containing the entry data
 
-The `$entry` array will contain any fields defined in the [Yaml metadata](/docs/entries) for the entry plus the following fields:
+The `$entry` object will have properties for any fields defined in the [Yaml frontmatter](/docs/entries) of the entry plus the following properties:
 
 * `url` - The relative URL of the entry
 * `content` - The HTML content of the entry

@@ -23,7 +23,7 @@ The contents of the `/build` directory can then be uploaded to a static hosting 
 
 ## Which mode should I use? {#which-mode}
 
-If your site does not require any kind of backend (dynamic) processing, then you can probably use static mode to build your site and deploy it as a completely static site. For more information on why this route might be a good idea, check out [jamstack.org](https://jamstack.org/).
+If your site does not require any kind of backend (dynamic) processing, then you can probably use static mode to build your site and deploy it as a completely static site. For more information on why this route might be a good idea, check out [<i class="fe fe-external-link pr-1"></i>jamstack.org](https://jamstack.org/).
 
 If your site does require any kind of backend processing, then you should use dynamic mode. For example, some common processing examples include:
 

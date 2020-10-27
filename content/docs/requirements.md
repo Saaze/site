@@ -19,7 +19,7 @@ Zend Engine v3.4.0, Copyright (c) Zend Technologies
 
 The first line will show what version of PHP you are running.
 
-You also need to make sure you have [Composer](https://getcomposer.org/) installed:
+You also need to make sure you have [<i class="fe fe-external-link pr-1"></i>Composer](https://getcomposer.org/) installed:
 
 ```bash
 composer -V
