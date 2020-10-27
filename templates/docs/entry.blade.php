@@ -62,10 +62,10 @@
                                 <a class="text-reset" href="/docs/quick-start">Quick Start</a>
                             </li>
                             <li class="mb-2">
-                                <a class="text-reset" href="/docs/updating">Updating</a>
+                                <a class="text-reset" href="/docs/deploying">Deploying</a>
                             </li>
                             <li class="mb-2">
-                                <a class="text-reset" href="/docs/deploying">Deploying</a>
+                                <a class="text-reset" href="/docs/updating">Updating</a>
                             </li>
                         </ul>
 
@@ -101,16 +101,11 @@
             </div>
             <div class="col-lg-9 col-xl-8 py-6 py-md-9 px-lg-10 js-toc-content">
 
-                <!-- Heading -->
-                <div class="d-flex align-items-center mb-5">
+                <h1 class="font-family-sans-serif m-0">
+                    {{ $entry->title }}
+                </h1>
 
-
-                    <!-- Heading -->
-                    <h1 class="font-family-sans-serif mb-0">
-                        {{ $entry->title }}
-                    </h1>
-
-                </div>
+                <hr class="my-6">
 
                 {!! $entry->content !!}
 
@@ -118,7 +113,6 @@
             <div class="col-lg-3 col-xl-2 d-none d-xl-block">
 
                 <div class="my-6 my-md-9 px-lg-8 border-left js-toc"></div>
-
 
             </div>
         </div>
