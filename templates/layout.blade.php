@@ -37,18 +37,36 @@
     <footer class="footer py-8 py-md-11 bg-dark">
         <div class="container-lg">
             <div class="row">
-                <div class="col text-center">
+                <div class="col-md-6">
 
-                    <!-- Brand -->
-                    <h2 class="font-family-serif text-white mb-1">
+                    <h2 class="font-family-serif text-white mb-0">
                         Saaze
                     </h2>
 
-                    <!-- Text -->
-                    <p class="text-white-60">
+                    <p class="text-white-60 mb-4">
                         Created by <a href="https://gilbitron.me" target="_blank">Gilbert Pellegrom</a> from <a
                             href="https://dev7studios.co" target="_blank">Dev7studios</a>
                     </p>
+
+                    <p class="text-white-60">
+                        <a href="/#features">Features</a>
+                        <span class="mx-3">/</span>
+                        <a href="/docs">Docs</a>
+                        <span class="mx-3">/</span>
+                        <a href="https://github.com/Saaze/saaze" target="_blank">GitHub</a>
+                    </p>
+
+                </div>
+                <div class="col-md-6">
+
+                    <h6 class="text-uppercase text-white mb-3">News</h6>
+
+                    <p class="text-white-60 mb-3">Get news and new releases in your inbox. No spam ever.</p>
+
+                    <form method="post"
+                        action="https://mailcoach.dev7studios.co/subscribe/49d20ab9-2629-447c-85ea-81d4217eddc8">
+                        <input class="form-control" type="email" name="email" placeholder="Email address" required>
+                    </form>
 
                 </div>
             </div>
