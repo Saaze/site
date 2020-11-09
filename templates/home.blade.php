@@ -6,7 +6,7 @@
 @include('partials.nav')
 
 <!-- WELCOME -->
-<section class="pt-6 pt-md-11 pb-10 pb-md-14">
+<section class="pt-6 pt-md-11 pb-9 pb-md-11">
     <div class="container-lg">
         <div class="row justify-content-center">
             <div class="col-md-10 col-lg-10 text-center">
@@ -31,203 +31,173 @@
     </div>
 </section>
 
+<!-- DEMO -->
+<section id="demo">
+    <div class="container-lg position-relative" style="z-index: 1;">
+        <div class="row align-items-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-12 col-md-7">
+                <div class="card window-terminal">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <span class="window-close"></span>
+                            <span class="window-minimize"></span>
+                            <span class="window-fullscreen"></span>
+                        </div>
+                        <div class="window-title">Terminal</div>
+                    </div>
+                    <div class="window-terminal-body">
+                        <span id="terminal" class="text-monospace"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-7 offset-md-5">
+                <div class="card window-preview">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <span class="window-close"></span>
+                            <span class="window-minimize"></span>
+                            <span class="window-fullscreen"></span>
+                        </div>
+                        <div class="window-title">
+                            <span class="window-url">http://127.0.0.1:8000</span>
+                        </div>
+                    </div>
+                    <div class="window-preview-body">
+                        <div id="preview" class="window-preview-content">
+                            <div class="d-flex align-items-center justify-content-between mb-5">
+                                <span>Saaze</span>
+                                <span class="preview-text w-25"></span>
+                            </div>
+                            <div class="mx-auto pt-5 w-75">
+                                <span class="preview-text w-50 mb-4"></span>
+                                <span class="preview-text mb-4"></span>
+                                <span class="preview-text mb-4"></span>
+                                <span class="preview-text mb-4"></span>
+                                <span class="preview-text w-25 mb-4"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DECORATION -->
+                <div class="position-relative d-none d-md-block">
+                    <div class="position-absolute bottom-right text-warning mb-n8 mr-n8">
+                        <svg width="185" height="186" viewBox="0 0 185 186" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="currentColor" />
+                            <circle cx="22" cy="2" r="2" fill="currentColor" />
+                            <circle cx="42" cy="2" r="2" fill="currentColor" />
+                            <circle cx="62" cy="2" r="2" fill="currentColor" />
+                            <circle cx="82" cy="2" r="2" fill="currentColor" />
+                            <circle cx="102" cy="2" r="2" fill="currentColor" />
+                            <circle cx="122" cy="2" r="2" fill="currentColor" />
+                            <circle cx="142" cy="2" r="2" fill="currentColor" />
+                            <circle cx="162" cy="2" r="2" fill="currentColor" />
+                            <circle cx="182" cy="2" r="2" fill="currentColor" />
+                            <circle cx="2" cy="22" r="2" fill="currentColor" />
+                            <circle cx="22" cy="22" r="2" fill="currentColor" />
+                            <circle cx="42" cy="22" r="2" fill="currentColor" />
+                            <circle cx="62" cy="22" r="2" fill="currentColor" />
+                            <circle cx="82" cy="22" r="2" fill="currentColor" />
+                            <circle cx="102" cy="22" r="2" fill="currentColor" />
+                            <circle cx="122" cy="22" r="2" fill="currentColor" />
+                            <circle cx="142" cy="22" r="2" fill="currentColor" />
+                            <circle cx="162" cy="22" r="2" fill="currentColor" />
+                            <circle cx="182" cy="22" r="2" fill="currentColor" />
+                            <circle cx="2" cy="42" r="2" fill="currentColor" />
+                            <circle cx="22" cy="42" r="2" fill="currentColor" />
+                            <circle cx="42" cy="42" r="2" fill="currentColor" />
+                            <circle cx="62" cy="42" r="2" fill="currentColor" />
+                            <circle cx="82" cy="42" r="2" fill="currentColor" />
+                            <circle cx="102" cy="42" r="2" fill="currentColor" />
+                            <circle cx="122" cy="42" r="2" fill="currentColor" />
+                            <circle cx="142" cy="42" r="2" fill="currentColor" />
+                            <circle cx="162" cy="42" r="2" fill="currentColor" />
+                            <circle cx="182" cy="42" r="2" fill="currentColor" />
+                            <circle cx="2" cy="62" r="2" fill="currentColor" />
+                            <circle cx="22" cy="62" r="2" fill="currentColor" />
+                            <circle cx="42" cy="62" r="2" fill="currentColor" />
+                            <circle cx="62" cy="62" r="2" fill="currentColor" />
+                            <circle cx="82" cy="62" r="2" fill="currentColor" />
+                            <circle cx="102" cy="62" r="2" fill="currentColor" />
+                            <circle cx="122" cy="62" r="2" fill="currentColor" />
+                            <circle cx="142" cy="62" r="2" fill="currentColor" />
+                            <circle cx="162" cy="62" r="2" fill="currentColor" />
+                            <circle cx="182" cy="62" r="2" fill="currentColor" />
+                            <circle cx="2" cy="82" r="2" fill="currentColor" />
+                            <circle cx="22" cy="82" r="2" fill="currentColor" />
+                            <circle cx="42" cy="82" r="2" fill="currentColor" />
+                            <circle cx="62" cy="82" r="2" fill="currentColor" />
+                            <circle cx="82" cy="82" r="2" fill="currentColor" />
+                            <circle cx="102" cy="82" r="2" fill="currentColor" />
+                            <circle cx="122" cy="82" r="2" fill="currentColor" />
+                            <circle cx="142" cy="82" r="2" fill="currentColor" />
+                            <circle cx="162" cy="82" r="2" fill="currentColor" />
+                            <circle cx="182" cy="82" r="2" fill="currentColor" />
+                            <circle cx="2" cy="102" r="2" fill="currentColor" />
+                            <circle cx="22" cy="102" r="2" fill="currentColor" />
+                            <circle cx="42" cy="102" r="2" fill="currentColor" />
+                            <circle cx="62" cy="102" r="2" fill="currentColor" />
+                            <circle cx="82" cy="102" r="2" fill="currentColor" />
+                            <circle cx="102" cy="102" r="2" fill="currentColor" />
+                            <circle cx="122" cy="102" r="2" fill="currentColor" />
+                            <circle cx="142" cy="102" r="2" fill="currentColor" />
+                            <circle cx="162" cy="102" r="2" fill="currentColor" />
+                            <circle cx="182" cy="102" r="2" fill="currentColor" />
+                            <circle cx="2" cy="122" r="2" fill="currentColor" />
+                            <circle cx="22" cy="122" r="2" fill="currentColor" />
+                            <circle cx="42" cy="122" r="2" fill="currentColor" />
+                            <circle cx="62" cy="122" r="2" fill="currentColor" />
+                            <circle cx="82" cy="122" r="2" fill="currentColor" />
+                            <circle cx="102" cy="122" r="2" fill="currentColor" />
+                            <circle cx="122" cy="122" r="2" fill="currentColor" />
+                            <circle cx="142" cy="122" r="2" fill="currentColor" />
+                            <circle cx="162" cy="122" r="2" fill="currentColor" />
+                            <circle cx="182" cy="122" r="2" fill="currentColor" />
+                            <circle cx="2" cy="142" r="2" fill="currentColor" />
+                            <circle cx="22" cy="142" r="2" fill="currentColor" />
+                            <circle cx="42" cy="142" r="2" fill="currentColor" />
+                            <circle cx="62" cy="142" r="2" fill="currentColor" />
+                            <circle cx="82" cy="142" r="2" fill="currentColor" />
+                            <circle cx="102" cy="142" r="2" fill="currentColor" />
+                            <circle cx="122" cy="142" r="2" fill="currentColor" />
+                            <circle cx="142" cy="142" r="2" fill="currentColor" />
+                            <circle cx="162" cy="142" r="2" fill="currentColor" />
+                            <circle cx="182" cy="142" r="2" fill="currentColor" />
+                            <circle cx="2" cy="162" r="2" fill="currentColor" />
+                            <circle cx="22" cy="162" r="2" fill="currentColor" />
+                            <circle cx="42" cy="162" r="2" fill="currentColor" />
+                            <circle cx="62" cy="162" r="2" fill="currentColor" />
+                            <circle cx="82" cy="162" r="2" fill="currentColor" />
+                            <circle cx="102" cy="162" r="2" fill="currentColor" />
+                            <circle cx="122" cy="162" r="2" fill="currentColor" />
+                            <circle cx="142" cy="162" r="2" fill="currentColor" />
+                            <circle cx="162" cy="162" r="2" fill="currentColor" />
+                            <circle cx="182" cy="162" r="2" fill="currentColor" />
+                            <circle cx="2" cy="182" r="2" fill="currentColor" />
+                            <circle cx="22" cy="182" r="2" fill="currentColor" />
+                            <circle cx="42" cy="182" r="2" fill="currentColor" />
+                            <circle cx="62" cy="182" r="2" fill="currentColor" />
+                            <circle cx="82" cy="182" r="2" fill="currentColor" />
+                            <circle cx="102" cy="182" r="2" fill="currentColor" />
+                            <circle cx="122" cy="182" r="2" fill="currentColor" />
+                            <circle cx="142" cy="182" r="2" fill="currentColor" />
+                            <circle cx="162" cy="182" r="2" fill="currentColor" />
+                            <circle cx="182" cy="182" r="2" fill="currentColor" /></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- SHAPE -->
 <div class="position-relative">
     <div class="shape shape-fluid-x shape-top text-dark">
-        <div class="shape-img pb-8 pb-md-11">
+        <div class="shape-img pb-14 pb-md-16">
             <svg viewBox="0 0 100 50" preserveAspectRatio="none">
                 <path d="M0 25h25L75 0h25v50H0z" fill="currentColor"></path>
             </svg>
         </div>
-    </div>
-</div>
-
-<!-- DECORATION -->
-<div class="position-relative d-none d-md-block">
-    <div class="position-absolute top-left text-warning mt-n11 ml-n8">
-        <svg width="185" height="186" viewBox="0 0 185 186" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="2" cy="2" r="2" fill="currentColor" />
-            <circle cx="22" cy="2" r="2" fill="currentColor" />
-            <circle cx="42" cy="2" r="2" fill="currentColor" />
-            <circle cx="62" cy="2" r="2" fill="currentColor" />
-            <circle cx="82" cy="2" r="2" fill="currentColor" />
-            <circle cx="102" cy="2" r="2" fill="currentColor" />
-            <circle cx="122" cy="2" r="2" fill="currentColor" />
-            <circle cx="142" cy="2" r="2" fill="currentColor" />
-            <circle cx="162" cy="2" r="2" fill="currentColor" />
-            <circle cx="182" cy="2" r="2" fill="currentColor" />
-            <circle cx="2" cy="22" r="2" fill="currentColor" />
-            <circle cx="22" cy="22" r="2" fill="currentColor" />
-            <circle cx="42" cy="22" r="2" fill="currentColor" />
-            <circle cx="62" cy="22" r="2" fill="currentColor" />
-            <circle cx="82" cy="22" r="2" fill="currentColor" />
-            <circle cx="102" cy="22" r="2" fill="currentColor" />
-            <circle cx="122" cy="22" r="2" fill="currentColor" />
-            <circle cx="142" cy="22" r="2" fill="currentColor" />
-            <circle cx="162" cy="22" r="2" fill="currentColor" />
-            <circle cx="182" cy="22" r="2" fill="currentColor" />
-            <circle cx="2" cy="42" r="2" fill="currentColor" />
-            <circle cx="22" cy="42" r="2" fill="currentColor" />
-            <circle cx="42" cy="42" r="2" fill="currentColor" />
-            <circle cx="62" cy="42" r="2" fill="currentColor" />
-            <circle cx="82" cy="42" r="2" fill="currentColor" />
-            <circle cx="102" cy="42" r="2" fill="currentColor" />
-            <circle cx="122" cy="42" r="2" fill="currentColor" />
-            <circle cx="142" cy="42" r="2" fill="currentColor" />
-            <circle cx="162" cy="42" r="2" fill="currentColor" />
-            <circle cx="182" cy="42" r="2" fill="currentColor" />
-            <circle cx="2" cy="62" r="2" fill="currentColor" />
-            <circle cx="22" cy="62" r="2" fill="currentColor" />
-            <circle cx="42" cy="62" r="2" fill="currentColor" />
-            <circle cx="62" cy="62" r="2" fill="currentColor" />
-            <circle cx="82" cy="62" r="2" fill="currentColor" />
-            <circle cx="102" cy="62" r="2" fill="currentColor" />
-            <circle cx="122" cy="62" r="2" fill="currentColor" />
-            <circle cx="142" cy="62" r="2" fill="currentColor" />
-            <circle cx="162" cy="62" r="2" fill="currentColor" />
-            <circle cx="182" cy="62" r="2" fill="currentColor" />
-            <circle cx="2" cy="82" r="2" fill="currentColor" />
-            <circle cx="22" cy="82" r="2" fill="currentColor" />
-            <circle cx="42" cy="82" r="2" fill="currentColor" />
-            <circle cx="62" cy="82" r="2" fill="currentColor" />
-            <circle cx="82" cy="82" r="2" fill="currentColor" />
-            <circle cx="102" cy="82" r="2" fill="currentColor" />
-            <circle cx="122" cy="82" r="2" fill="currentColor" />
-            <circle cx="142" cy="82" r="2" fill="currentColor" />
-            <circle cx="162" cy="82" r="2" fill="currentColor" />
-            <circle cx="182" cy="82" r="2" fill="currentColor" />
-            <circle cx="2" cy="102" r="2" fill="currentColor" />
-            <circle cx="22" cy="102" r="2" fill="currentColor" />
-            <circle cx="42" cy="102" r="2" fill="currentColor" />
-            <circle cx="62" cy="102" r="2" fill="currentColor" />
-            <circle cx="82" cy="102" r="2" fill="currentColor" />
-            <circle cx="102" cy="102" r="2" fill="currentColor" />
-            <circle cx="122" cy="102" r="2" fill="currentColor" />
-            <circle cx="142" cy="102" r="2" fill="currentColor" />
-            <circle cx="162" cy="102" r="2" fill="currentColor" />
-            <circle cx="182" cy="102" r="2" fill="currentColor" />
-            <circle cx="2" cy="122" r="2" fill="currentColor" />
-            <circle cx="22" cy="122" r="2" fill="currentColor" />
-            <circle cx="42" cy="122" r="2" fill="currentColor" />
-            <circle cx="62" cy="122" r="2" fill="currentColor" />
-            <circle cx="82" cy="122" r="2" fill="currentColor" />
-            <circle cx="102" cy="122" r="2" fill="currentColor" />
-            <circle cx="122" cy="122" r="2" fill="currentColor" />
-            <circle cx="142" cy="122" r="2" fill="currentColor" />
-            <circle cx="162" cy="122" r="2" fill="currentColor" />
-            <circle cx="182" cy="122" r="2" fill="currentColor" />
-            <circle cx="2" cy="142" r="2" fill="currentColor" />
-            <circle cx="22" cy="142" r="2" fill="currentColor" />
-            <circle cx="42" cy="142" r="2" fill="currentColor" />
-            <circle cx="62" cy="142" r="2" fill="currentColor" />
-            <circle cx="82" cy="142" r="2" fill="currentColor" />
-            <circle cx="102" cy="142" r="2" fill="currentColor" />
-            <circle cx="122" cy="142" r="2" fill="currentColor" />
-            <circle cx="142" cy="142" r="2" fill="currentColor" />
-            <circle cx="162" cy="142" r="2" fill="currentColor" />
-            <circle cx="182" cy="142" r="2" fill="currentColor" />
-            <circle cx="2" cy="162" r="2" fill="currentColor" />
-            <circle cx="22" cy="162" r="2" fill="currentColor" />
-            <circle cx="42" cy="162" r="2" fill="currentColor" />
-            <circle cx="62" cy="162" r="2" fill="currentColor" />
-            <circle cx="82" cy="162" r="2" fill="currentColor" />
-            <circle cx="102" cy="162" r="2" fill="currentColor" />
-            <circle cx="122" cy="162" r="2" fill="currentColor" />
-            <circle cx="142" cy="162" r="2" fill="currentColor" />
-            <circle cx="162" cy="162" r="2" fill="currentColor" />
-            <circle cx="182" cy="162" r="2" fill="currentColor" />
-            <circle cx="2" cy="182" r="2" fill="currentColor" />
-            <circle cx="22" cy="182" r="2" fill="currentColor" />
-            <circle cx="42" cy="182" r="2" fill="currentColor" />
-            <circle cx="62" cy="182" r="2" fill="currentColor" />
-            <circle cx="82" cy="182" r="2" fill="currentColor" />
-            <circle cx="102" cy="182" r="2" fill="currentColor" />
-            <circle cx="122" cy="182" r="2" fill="currentColor" />
-            <circle cx="142" cy="182" r="2" fill="currentColor" />
-            <circle cx="162" cy="182" r="2" fill="currentColor" />
-            <circle cx="182" cy="182" r="2" fill="currentColor" /></svg>
-    </div>
-</div>
-
-<!-- DECORATION -->
-<div class="position-relative d-none d-md-block">
-    <div class="position-absolute top-right text-primary-dark mt-n15">
-        <svg width="129" height="208" viewBox="0 0 129 208" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#decoration5clip0)">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M142.812 201.281a6.47 6.47 0 1112.94.002 6.47 6.47 0 01-12.94-.002zm1.618 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.811-4.811-4.811 1.143-1.143 4.811 4.811zm-32.343 1.143a6.468 6.468 0 1112.936 0 6.468 6.468 0 01-12.936 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.811-4.811-4.811 1.143-1.143 4.811 4.811z"
-                    fill="currentColor" />
-            </g>
-            <g clip-path="url(#decoration5clip1)">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M142.812 149.281a6.47 6.47 0 1112.94.002 6.47 6.47 0 01-12.94-.002zm1.618 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.811-4.811-4.811 1.143-1.143 4.811 4.811zm-32.343 1.143a6.468 6.468 0 1112.936 0 6.468 6.468 0 01-12.936 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.811-4.811-4.811 1.143-1.143 4.811 4.811z"
-                    fill="currentColor" />
-            </g>
-            <g clip-path="url(#decoration5clip2)">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M142.812 97.281a6.47 6.47 0 1112.939.002 6.47 6.47 0 01-12.939-.002zm1.618 0a4.851 4.851 0 119.703 0 4.851 4.851 0 01-9.703 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.81-1.143-1.143 4.811-4.81-4.811-4.812 1.143-1.143 4.811 4.81zm-32.343 1.143a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.937 0zm1.617 0a4.851 4.851 0 119.703 0 4.851 4.851 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.81-4.811-4.812 1.143-1.143 4.811 4.81z"
-                    fill="currentColor" />
-            </g>
-            <g clip-path="url(#decoration5clip3)">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M38.813 149.281a6.47 6.47 0 1112.938 0 6.47 6.47 0 01-12.938 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811zm-32.343 1.143a6.469 6.469 0 1112.937.001 6.469 6.469 0 01-12.938-.001zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811z"
-                    fill="currentColor" />
-            </g>
-            <g clip-path="url(#decoration5clip4)">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M38.813 97.281a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81zm-32.343 1.143a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81z"
-                    fill="currentColor" />
-            </g>
-            <g clip-path="url(#decoration5clip5)">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M38.813 45.281a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81zm-32.343 1.143a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81z"
-                    fill="currentColor" />
-            </g>
-            <g clip-path="url(#decoration5clip6)">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M90.813 175.281a6.47 6.47 0 1112.938 0 6.47 6.47 0 01-12.939 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811zm-32.344 1.143a6.469 6.469 0 1112.938.001 6.469 6.469 0 01-12.938-.001zm1.618 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811z"
-                    fill="currentColor" />
-            </g>
-            <g clip-path="url(#decoration5clip7)">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M90.813 123.281a6.47 6.47 0 1112.938 0 6.47 6.47 0 01-12.939 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81zm-32.344 1.143a6.469 6.469 0 1112.938 0 6.469 6.469 0 01-12.938 0zm1.618 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811z"
-                    fill="currentColor" />
-            </g>
-            <g clip-path="url(#decoration5clip8)">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M90.813 71.281a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81zm-32.344 1.143a6.469 6.469 0 1112.938 0 6.469 6.469 0 01-12.938 0zm1.618 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81z"
-                    fill="currentColor" />
-            </g>
-            <defs>
-                <clipPath id="decoration4clip0">
-                    <path transform="matrix(0 -1 -1 0 155.75 207.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-                </clipPath>
-                <clipPath id="decoration4clip1">
-                    <path transform="rotate(-90 155.75 0)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-                </clipPath>
-                <clipPath id="decoration4clip2">
-                    <path transform="matrix(0 -1 -1 0 155.75 103.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-                </clipPath>
-                <clipPath id="decoration4clip3">
-                    <path transform="matrix(0 -1 -1 0 51.75 155.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-                </clipPath>
-                <clipPath id="decoration4clip4">
-                    <path transform="matrix(0 -1 -1 0 51.75 103.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-                </clipPath>
-                <clipPath id="decoration4clip5">
-                    <path transform="matrix(0 -1 -1 0 51.75 51.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-                </clipPath>
-                <clipPath id="decoration4clip6">
-                    <path transform="matrix(0 -1 -1 0 103.75 181.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-                </clipPath>
-                <clipPath id="decoration4clip7">
-                    <path transform="matrix(0 -1 -1 0 103.75 129.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-                </clipPath>
-                <clipPath id="decoration4clip8">
-                    <path transform="matrix(0 -1 -1 0 103.75 77.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-                </clipPath>
-            </defs>
-        </svg>
     </div>
 </div>
 
@@ -632,4 +602,29 @@
         </div>
     </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+<script>
+    new TypeIt('#terminal', {
+        speed: 50,
+        waitUntilVisible: true
+    })
+        .type('<span class="caret">$</span> ', {speed: 0})
+        .pause(2000)
+        .type('composer create-project saaze/saaze mysite.com')
+        .break()
+        .type('<span class="caret">$</span> ', {speed: 0})
+        .pause(1000)
+        .type('cd mysite.com')
+        .break()
+        .type('<span class="caret">$</span> ', {speed: 0})
+        .pause(1000)
+        .type('php saaze serve')
+        .pause(500)
+        .exec(function() {
+            var el = document.getElementById('preview');
+            el.classList.add('show');
+        })
+        .go();
+</script>
 @endsection
