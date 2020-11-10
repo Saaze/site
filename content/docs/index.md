@@ -4,7 +4,7 @@ title: Introduction
 
 Saaze is an all-inclusive, flat-file CMS for _simple_ websites and blogs. It's not designed to be a replacement for great CMS's (e.g. WordPress, Statamic etc.), rather it's designed to be a smaller, simpler alternative.
 
-Why is there a need for a simpler alternative? WordPress is a great CMS but it can become bloated and a maintenance nightmare for a simple sites. Static site builders are fast but normally have a steep learning curve and require lots of tooling to make them work. We believe building a personal site should be stupidly simple. That's why Saaze is built on the following principles.
+Why is there a need for a simpler alternative? WordPress is a great CMS but it can become bloated and a maintenance nightmare for simple sites. Static site builders are fast but normally have a steep learning curve and require lots of tooling to make them work. We believe building a personal site should be stupidly simple. That's why Saaze is built on the following principles.
 
 ## Easy to run {#easy-to-run}
 
