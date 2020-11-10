@@ -24,6 +24,18 @@
         @endif
     </title>
     <meta name="description" content="Saaze is an all-inclusive, flat-file CMS for simple websites and blogs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saaze.dev/">
+    <meta property="og:title" content="Saaze - An all-inclusive, flat-file CMS for simple websites and blogs">
+    <meta property="og:description" content="Saaze is an all-inclusive, flat-file CMS for simple websites and blogs.">
+    <meta property="og:image" content="https://saaze.dev/assets/banner.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://saaze.dev/">
+    <meta property="twitter:title" content="Saaze - An all-inclusive, flat-file CMS for simple websites and blogs">
+    <meta property="twitter:description"
+        content="Saaze is an all-inclusive, flat-file CMS for simple websites and blogs.">
+    <meta property="twitter:image" content="https://saaze.dev/assets/banner.png">
+
     <script src="https://cdn.usefathom.com/script.js" data-site="QBKBZKHI" defer></script>
 </head>
 
