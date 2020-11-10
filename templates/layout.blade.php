@@ -35,6 +35,7 @@
     <meta property="twitter:description"
         content="Saaze is an all-inclusive, flat-file CMS for simple websites and blogs.">
     <meta property="twitter:image" content="https://saaze.dev/assets/banner.png">
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
 
     <script src="https://cdn.usefathom.com/script.js" data-site="QBKBZKHI" defer></script>
 </head>
