@@ -94,6 +94,16 @@
                             </li>
                         </ul>
 
+                        <h5 class="font-family-sans-serif mb-3">
+                            Advanced
+                        </h5>
+
+                        <ul class="list-unstyled font-size-xs text-muted mb-6">
+                            <li class="mb-2">
+                                <a class="text-reset" href="/docs/extending">Extending Saaze</a>
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
 
