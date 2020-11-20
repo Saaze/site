@@ -40,11 +40,11 @@ Now that we have a collection, let's create our first entry using the `make:entr
 php saaze make:entry pages index --title="Home"
 ```
 
-The first argument is the collection ID (`pages`) and the second argument is the ID of the entry you want to create (`index`). There should now be a `pages/indedx.md` file in the content directory. Note that the entry ID will be used as the slug for your content.
+The first argument is the collection ID (`pages`) and the second argument is the ID of the entry you want to create (`index`). There should now be a `pages/index.md` file in the content directory. Note that the entry ID will be used as the slug for your content.
 
 ## Add some content {#add-content}
 
-Go ahead and use your favourite text editor to edit the new entry file `pages/indedx.md`. The file is split into two parts:
+Go ahead and use your favourite text editor to edit the new entry file `pages/index.md`. The file is split into two parts:
 
 1. The first part is made up of Yaml frontmatter
 1. The second part is the Markdown content
